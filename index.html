@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>cours de html de zéro</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logohead.png" />
+    <!-- Liaison de HTML et CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL= unordered list -->
+      <ul>
+        <li>Acceuil</li>
+        <li>Boutique</li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!-- un seul H1 par page -->
+      <h1>Ceci est le titre principal</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+        numquam hic, aliquam quisquam, reiciendis quis nostrum aliquid
+        dignissimos architecto quasi voluptates ab! Ab esse voluptate amet nihil
+        enim modi laborum.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Orrdered list</h2>
+        <ol>
+          <li>ceci est une</li>
+          <li>liste dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>image en html</h3>
+        <img src="./download.jpeg" height="200" alt="image-section" />
+
+        <div>
+          <h4>Tableau</h4>
+          <table border="4">
+            <!-- thead est pour l'en-tete du tableau -->
+            <thead>
+              <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+                <th>col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cellule 1</td>
+                <td>cellule 2</td>
+                <td>cellule 3s</td>
+              </tr>
+              <tr>
+                <td>cellule 4</td>
+                <td>cellule 5</td>
+                <td>cellule 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#8594;</span> les liens</h5>
+          <!-- _blank permet de créer un nouvel onglet -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            ><span>&#8594;</span> HTML cheat sheet</a
+          >
+        </div>
+        <div>
+          <h6 class="important"><i>&#128190;</i>Vidéo</h6>
+          <video src="./video.mp4" autoplay loop height="200"></video>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <form action="">
+          <!-- "for"et "id" permet de lier le label à imput -->
+          <label for="name">NOM</label>
+          <input type="text" id="name" placeholder="entrer votre nom" />
+          <br />
+          <label for="age">Entrer votre age</label>
+          <input type="number" id="age" value="12" />
+
+          <br />
+
+          <!-- input de type select -->
+          <label for="gender">genre</label>
+          <select id="gender">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Autre</option>
+          </select>
+          <!-- input de type radio -->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">humain</label>
+
+            <input type="radio" name="type" id="lion" />
+            <label for="lion">lion</label>
+
+            <input type="radio" name="type" id="cat" />
+            <label for="cat">chat</label>
+          </div>
+          <textarea placeholder="votre messaga..." id="" cols="20"> </textarea>
+          <br />
+          <!-- Input de type checkbox -->
+          <input type="checkbox" name="" id="cgv" />
+          <label for="cgv">Accepter les conditions générales</label>
+          <br />
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+
+    <!-- mail et envoi de fichiers -->
+    <footer>
+      <a href="mailto:fs@gmail.com">Contactez moi !</a> <br />
+      <a href="./notice.txt" download="notice">télécharger la notice</a>
+    </footer>
+  </body>
+</html>
